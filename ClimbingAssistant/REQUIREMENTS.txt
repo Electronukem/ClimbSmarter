@@ -1,0 +1,33 @@
+REQUIREMENTS
+============
+
+This project has NO external package dependencies.
+All functionality is built on Apple system frameworks only:
+  - AVFoundation  (camera capture)
+  - Vision        (human body pose detection)
+  - Combine       (reactive frame publishing)
+  - SwiftUI       (UI)
+
+--- Development Environment ---
+
+macOS:   13.0 (Ventura) or later
+Xcode:   15.0 or later
+Swift:   5.9 or later (bundled with Xcode 15)
+
+--- Target Device ---
+
+Platform:   iOS 16.0 or later
+Device:     iPhone with Neural Engine (A12 Bionic or later recommended)
+            iPad is not supported (TARGETED_DEVICE_FAMILY = 1)
+Simulator:  NOT supported — camera capture requires a real device
+
+--- Apple Developer Account ---
+
+A free Apple ID is sufficient for personal device testing.
+A paid Apple Developer Program membership ($99/yr) is required
+for distribution via the App Store or TestFlight.
+
+--- No Package Manager Setup Required ---
+
+There is no Podfile, Package.swift, or Cartfile.
+Simply open ClimbingAssistant.xcodeproj and build.
